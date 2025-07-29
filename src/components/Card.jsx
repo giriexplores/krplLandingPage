@@ -46,7 +46,7 @@ export default function Card({ icon: Icon, title, description }) {
         </div>
       </motion.div>
 
-      <style jsx>{`
+      <style>{`
         .perspective {
           perspective: 1000px;
         }

@@ -111,7 +111,7 @@ export default function HeroSection() {
       </div>
 
       {/* Custom CSS for 3D Effect */}
-      <style jsx>{`
+      <style>{`
         .perspective {
           perspective: 1500px;
           perspective-origin: center center;

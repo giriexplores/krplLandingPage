@@ -5,6 +5,7 @@ import {
   Linkedin,
   Youtube,
   ChevronRight,
+  Mail,
 } from "lucide-react";
 
 export default function Footer() {
@@ -64,19 +65,52 @@ export default function Footer() {
 
         {/* Social Links */}
         <div>
-          <h4 className="mb-4 text-lg font-semibold">Follow us</h4>
+          <h4 className="mb-4 text-lg font-semibold">Contact Us</h4>
           <ul className="space-y-3 text-sm text-gray-300">
-            <li className="flex cursor-pointer items-center gap-2 hover:text-white">
-              <Facebook size={18} /> Facebook
+            <li>
+              <a
+                className="flex cursor-pointer items-center gap-2 hover:text-white"
+                href="https://www.facebook.com/profile.php?id=61572443643522"
+                target="_blank"
+              >
+                <Facebook size={18} /> Facebook
+              </a>
             </li>
-            <li className="flex cursor-pointer items-center gap-2 hover:text-white">
-              <Instagram size={18} /> Instagram
+            <li>
+              <a
+                className="flex cursor-pointer items-center gap-2 hover:text-white"
+                href="https://www.instagram.com/lelekart_shop/"
+                target="_blank"
+              >
+                <Instagram size={18} /> Instagram
+              </a>
             </li>
-            <li className="flex cursor-pointer items-center gap-2 hover:text-white">
-              <Linkedin size={18} /> LinkedIn
+            <li>
+              <a
+                className="flex cursor-pointer items-center gap-2 hover:text-white"
+                href="https://www.linkedin.com/in/yourprofile"
+                target="_blank"
+              >
+                <Linkedin size={18} /> LinkedIn
+              </a>
             </li>
-            <li className="flex cursor-pointer items-center gap-2 hover:text-white">
-              <Youtube size={18} /> Youtube
+            <li>
+              <a
+                className="flex cursor-pointer items-center gap-2 hover:text-white"
+                href="https://www.youtube.com/@Lelekart_Shop"
+                target="_blank"
+              >
+                <Youtube size={18} /> Youtube
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex cursor-pointer items-center gap-2 hover:text-white"
+                href="https://www.youtube.com/@Lelekart_Shop"
+                target="_blank"
+              >
+                <Mail size={18} /> Email
+              </a>
             </li>
           </ul>
         </div>
