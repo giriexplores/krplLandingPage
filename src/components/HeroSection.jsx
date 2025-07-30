@@ -79,14 +79,6 @@ export default function HeroSection() {
                 <p className="xs:text-base mb-6 text-sm leading-relaxed text-gray-200 sm:text-lg md:text-xl">
                   {slide.description}
                 </p>
-                <motion.a
-                  href="#contact"
-                  className="inline-block transform rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl sm:px-8 sm:py-4 sm:text-base"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Get Started
-                </motion.a>
               </motion.div>
 
               {/* Phase indicator */}
