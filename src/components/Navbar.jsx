@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Mail, Phone } from "lucide-react";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -62,36 +63,28 @@ export default function Navbar() {
                 )}
               </AnimatePresence>
             </div>
-            <a href="#" className="text-gray-700 hover:text-blue-600">
+            <a href="#aboutus" className="text-gray-700 hover:text-blue-600">
               About Us
             </a>
-            <a href="#" className="text-gray-700 hover:text-blue-600">
+            <a href="#contact" className="text-gray-700 hover:text-blue-600">
               Contact Us
             </a>
-            <div className="relative">
-              <button
-                onClick={() => setServicesOpen(false)}
-                className="inline-flex items-center text-gray-700 hover:text-blue-600"
-                onClickCapture={() => setServicesOpen(false)}
-              >
-                Resources
-                <svg
-                  className="ml-1 h-4 w-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M5.23 7.21l4.77 4.77 4.77-4.77 1.06 1.06-5.83 5.83-5.83-5.83z" />
-                </svg>
-              </button>
-              <AnimatePresence>
-                {/** Reuse servicesOpen state or separate */}
-              </AnimatePresence>
-            </div>
           </div>
-          <div>
-            <button className="hidden rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700 md:inline-block">
-              Get Started
-            </button>
+          <div className="flex items-center space-x-4">
+            <a
+              href="mailto:marketing@lelekart.com"
+              className="flex flex-col items-center rounded bg-blue-600 px-2 py-2 text-white hover:bg-blue-700"
+            >
+              <Mail className="animate-pulse" />
+              <span className="text-xs">Email Us</span>
+            </a>
+            <a
+              href="tel:+919650503696"
+              className="flex flex-col items-center rounded bg-blue-600 px-2 py-2 text-white hover:bg-blue-700"
+            >
+              <Phone className="animate-bounce" />
+              <span className="text-xs">Call Now</span>
+            </a>
           </div>
           <div className="md:hidden">
             <button
@@ -159,13 +152,13 @@ export default function Navbar() {
                 </div>
               )}
               <a
-                href="#"
+                href="#aboutus"
                 className="block rounded px-3 py-2 text-gray-700 hover:bg-gray-100"
               >
                 About Us
               </a>
               <a
-                href="#"
+                href="#contact"
                 className="block rounded px-3 py-2 text-gray-700 hover:bg-gray-100"
               >
                 Contact Us

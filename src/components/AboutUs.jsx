@@ -3,7 +3,7 @@ import { FileText, Globe } from "lucide-react";
 
 export default function WhoWeAreSection() {
   return (
-    <section className="bg-white px-4 py-16">
+    <section id="aboutus" className="bg-white px-4 py-16">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 lg:flex-row">
         {/* Left: Image */}
         <div className="flex-1">

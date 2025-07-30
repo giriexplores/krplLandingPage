@@ -8,6 +8,7 @@ import TestimonialSection from "./components/Testimonials";
 import ContactSection from "./components/ContactSection";
 import FloatingButtons from "./components/FloatingButtons";
 import Footer from "./components/Footer";
+import FAQSection from "./components/FAQSection";
 
 const App = () => {
   return (
@@ -17,9 +18,10 @@ const App = () => {
       <FloatingButtons />
       <CardSection />
       <AboutUs />
-      <OurServicesSection/>
-      <TestimonialSection />
+      <OurServicesSection />
+      {/* <TestimonialSection /> */}
       <ContactSection />
+      <FAQSection />
       <Footer />
     </>
   );

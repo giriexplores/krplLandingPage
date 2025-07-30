@@ -57,7 +57,7 @@ export default function OurServicesSection() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#0F172A] px-4 py-20 text-white">
+    <section id="services" className="relative overflow-hidden bg-[#0F172A] px-4 py-20 text-white">
       <div className="mx-auto mb-12 max-w-7xl text-center">
         <p className="mb-2 font-semibold tracking-wide text-blue-500 uppercase">
           Services We Provide

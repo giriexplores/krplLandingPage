@@ -12,11 +12,14 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.11",
     "framer-motion": "^12.23.11",
     "lucide-react": "^0.532.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hook-form": "^7.61.1",
+    "react-hot-toast": "^2.5.2",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {

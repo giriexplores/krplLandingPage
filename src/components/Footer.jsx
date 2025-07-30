@@ -6,6 +6,7 @@ import {
   Youtube,
   ChevronRight,
   Mail,
+  Phone,
 } from "lucide-react";
 
 export default function Footer() {
@@ -20,20 +21,39 @@ export default function Footer() {
             marketing to help your business grow and succeed in the digital
             world.
           </p>
+          <h4 className="mt-4 mb-2 text-lg font-semibold">Contact Us</h4>
+          <ul className="space-y-1 text-sm text-gray-300">
+            <li>
+              <a
+                className="flex cursor-pointer items-center gap-2 hover:text-white"
+                href="mailto:marketing.lelekart@gmail.com"
+              >
+                <Mail size={18} /> Email
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex cursor-pointer items-center gap-2 hover:text-white"
+                href="tel:+919650503696"
+              >
+                <Phone size={18} /> Call Now
+              </a>
+            </li>
+          </ul>
         </div>
 
         {/* Company Links */}
         <div>
           <h4 className="mb-4 text-lg font-semibold">Company</h4>
           <ul className="space-y-2 text-sm text-gray-300">
-            {["About Us", "FAQ's", "Services", "Latest Blog", "Contact Us"].map(
+            {[{name:"About Us", link:"#aboutus"}, {name:"FAQ's", link:"#faqs"}, {name:"Services", link:"#services"}, {name:"Contact Us", link:"#contact"}].map(
               (item, i) => (
                 <li
                   key={i}
                   className="flex cursor-pointer items-center gap-2 hover:text-white"
                 >
                   <ChevronRight size={16} />
-                  {item}
+                  <a href={item.link}>{item.name}</a>
                 </li>
               )
             )}
@@ -65,7 +85,7 @@ export default function Footer() {
 
         {/* Social Links */}
         <div>
-          <h4 className="mb-4 text-lg font-semibold">Contact Us</h4>
+          <h4 className="mb-4 text-lg font-semibold">Follow Us</h4>
           <ul className="space-y-3 text-sm text-gray-300">
             <li>
               <a
@@ -88,28 +108,10 @@ export default function Footer() {
             <li>
               <a
                 className="flex cursor-pointer items-center gap-2 hover:text-white"
-                href="https://www.linkedin.com/in/yourprofile"
-                target="_blank"
-              >
-                <Linkedin size={18} /> LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                className="flex cursor-pointer items-center gap-2 hover:text-white"
                 href="https://www.youtube.com/@Lelekart_Shop"
                 target="_blank"
               >
                 <Youtube size={18} /> Youtube
-              </a>
-            </li>
-            <li>
-              <a
-                className="flex cursor-pointer items-center gap-2 hover:text-white"
-                href="https://www.youtube.com/@Lelekart_Shop"
-                target="_blank"
-              >
-                <Mail size={18} /> Email
               </a>
             </li>
           </ul>
